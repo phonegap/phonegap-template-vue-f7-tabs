@@ -37,6 +37,7 @@ if (window.isiOS) {
   const Framework7ThemeColorsMaterial =
     require('framework7/dist/css/framework7.material.colors.min.css');
 }
+require('framework7-icons/css/framework7-icons.css');
 
 // Init F7 Vue Plugin
 Vue.use(Framework7Vue);

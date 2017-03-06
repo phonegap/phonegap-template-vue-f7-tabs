@@ -3,9 +3,9 @@
     <f7-navbar title="Home" sliding />
 
     <f7-toolbar tabbar :labels="isiOS">
-      <f7-link icon="icon-home" text="Home" tab-link="#home" active></f7-link>
-      <f7-link icon="icon-about" text="About" tab-link="#about"></f7-link>
-      <f7-link icon="icon-services" text="Services" tab-link="#services"></f7-link>
+      <f7-link icon-if-ios="f7:home" text="Home" tab-link="#home" active></f7-link>
+      <f7-link icon-if-ios="f7:info" text="About" tab-link="#about"></f7-link>
+      <f7-link icon-if-ios="f7:persons" text="Services" tab-link="#services"></f7-link>
     </f7-toolbar>
 
     <f7-tabs swipeable>
