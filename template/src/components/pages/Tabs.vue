@@ -2,10 +2,17 @@
   <f7-page with-subnavbar>
     <f7-navbar title="Home" sliding />
 
-    <f7-toolbar tabbar :labels="isiOS">
-      <f7-link icon-if-ios="f7:home" text="Home" tab-link="#home" active></f7-link>
-      <f7-link icon-if-ios="f7:info" text="About" tab-link="#about"></f7-link>
-      <f7-link icon-if-ios="f7:persons" text="Services" tab-link="#services"></f7-link>
+    <!-- iOS TabBar has icons -->
+    <f7-toolbar v-if="isiOS" tabbar labels>
+      <f7-link icon-f7="home" text="Home" tab-link="#home" active></f7-link>
+      <f7-link icon-f7="info" text="About" tab-link="#about"></f7-link>
+      <f7-link icon-f7="persons" text="Services" tab-link="#services"></f7-link>
+    </f7-toolbar>
+    <!-- Material TabBar does not -->
+    <f7-toolbar v-if="isMaterial" tabbar>
+      <f7-link text="Home" tab-link="#home" active></f7-link>
+      <f7-link text="About" tab-link="#about"></f7-link>
+      <f7-link text="Services" tab-link="#services"></f7-link>
     </f7-toolbar>
 
     <f7-tabs swipeable>
@@ -38,6 +45,9 @@
     computed: {
       isiOS() {
         return window.isiOS;
+      },
+      isMaterial() {
+        return window.isMaterial;
       },
     },
   };

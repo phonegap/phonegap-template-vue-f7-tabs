@@ -34,5 +34,9 @@ describe('Tabs.vue', () => {
       window.isiOS = true;
       expect(Tabs.computed.isiOS()).to.equal(true);
     });
+    it('should return a computed property for the global `isMaterial`', () => {
+      window.isMaterial = true;
+      expect(Tabs.computed.isMaterial()).to.equal(true);
+    });
   });
 });
