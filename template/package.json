@@ -20,7 +20,7 @@
     "eslint-plugin-import": "^2.2.0",
     "framework7": "^1.5.3",
     "framework7-icons": "^0.8.9",
-    "framework7-vue": "^0.8.0",
+    "framework7-vue": "^0.8.5",
     "vue": "^2.1.0",
     "whatwg-fetch": "^2.0.2"
   },
