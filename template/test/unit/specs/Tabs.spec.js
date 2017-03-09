@@ -10,7 +10,9 @@ import Tabs from 'src/components/pages/Tabs';
 // Init F7 Vue Plugin
 Vue.use(Framework7Vue);
 
-let vm;
+// vm will be useful in some tests... but as it is not used in these examples,
+//   we have to get the linter to leave us alone.
+let vm; // eslint-disable-line no-unused-vars
 
 describe('Tabs.vue', () => {
   beforeEach(() => {
