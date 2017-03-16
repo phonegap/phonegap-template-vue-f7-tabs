@@ -54,12 +54,12 @@ new Vue({ // eslint-disable-line no-new
     material: window.isMaterial,
     animateNavBackIcon: window.isiOS,
     pushState: true,
-    pushStateNoAnimation: true,
+    pushStateNoAnimation: true
   },
   // Register App Component
   components: {
-    app: App,
-  },
+    app: App
+  }
 });
 
 // Ye olde Device Ready

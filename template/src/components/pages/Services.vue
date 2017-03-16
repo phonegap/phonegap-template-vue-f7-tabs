@@ -14,10 +14,10 @@
 <script>
   export default {
     name: 'Services',
-    data() {
+    data () {
       return {
-        title: 'Services Page',
+        title: 'Services Page'
       };
-    },
+    }
   };
 </script>

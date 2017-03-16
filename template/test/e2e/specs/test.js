@@ -42,5 +42,5 @@ module.exports = {
       .assert.containsText('.tabbar a[data-tab="#about"]', 'ABOUT')
       .assert.containsText('.tabbar a[data-tab="#services"]', 'SERVICES')
       .end();
-  },
+  }
 };

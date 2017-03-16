@@ -34,15 +34,15 @@
     components: {
       'home-page': Home,
       'about-page': About,
-      'services-page': Services,
+      'services-page': Services
     },
     computed: {
-      isiOS() {
+      isiOS () {
         return window.isiOS;
       },
-      isMaterial() {
+      isMaterial () {
         return window.isMaterial;
-      },
-    },
+      }
+    }
   };
 </script>

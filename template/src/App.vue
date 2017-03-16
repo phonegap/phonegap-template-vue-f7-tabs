@@ -21,12 +21,12 @@
   export default {
     name: 'App',
     computed: {
-      isiOS() {
+      isiOS () {
         return window.isiOS;
       },
-      platformClass() {
+      platformClass () {
         return window.isiOS ? 'ios' : 'material';
-      },
-    },
+      }
+    }
   };
 </script>
