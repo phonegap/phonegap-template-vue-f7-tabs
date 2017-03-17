@@ -2,6 +2,8 @@
 
 Vue.js, Framework7, and Cordova / PhoneGap Template with Babel, Webpack and Hot Reloading
 
+![example image](https://github.com/phonegap/phonegap-template-vue-f7-tabs/raw/master/example-tabs.png)
+
 ## Getting Started
 
 ### Prerequisites
