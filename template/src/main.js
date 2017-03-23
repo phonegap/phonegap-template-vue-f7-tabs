@@ -76,7 +76,7 @@ function handleBackButton () {
     return f7.closeModal();
   }
   // If we have a back button, we want it to go back
-  if (document.querySelector('a.back')) {
+  if (f7.mainView.history.length > 1) {
     return f7.mainView.router.back();
   }
   // Default to closing the app
