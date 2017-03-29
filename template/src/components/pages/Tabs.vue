@@ -9,7 +9,7 @@
         <f7-link :icon-f7="isiOS ? 'persons' : ''" text="Services" tab-link="#services"></f7-link>
     </f7-toolbar>
 
-    <f7-tabs swipeable>
+    <f7-tabs>
       <f7-tab id="home" active>
         <home-page />
       </f7-tab>
