@@ -1,5 +1,5 @@
 <template>
-  <f7-page with-subnavbar>
+  <f7-page tabbar-fixed with-subnavbar>
     <f7-navbar title="Home" sliding />
 
     <!-- iOS TabBar has icons, Material TabBar does not -->
