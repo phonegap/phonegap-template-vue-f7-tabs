@@ -21,7 +21,7 @@ cordova create MyAppName --template=phonegap-template-vue-f7-tabs
 or
 
 ```
-phonegap create MyAppName --template vue-f7-tabs
+phonegap create MyAppName --template phonegap-template-vue-f7-tabs
 ```
 
 then
