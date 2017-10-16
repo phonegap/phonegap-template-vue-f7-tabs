@@ -1,6 +1,6 @@
 {
   "name": "phonegap-template-vue-f7-tabs",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "A TabBar PhoneGap template using Vue.js and Framework7",
   "main": "index.js",
   "keywords": [
