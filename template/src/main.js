@@ -81,9 +81,3 @@ function handleBackButton () {
   // Default to closing the app
   return window.navigator.app.exitApp();
 }
-
-// Ye olde Device Ready
-document.addEventListener('deviceready', () => {
-  // Bind to the back button for Android
-  document.addEventListener('backbutton', handleBackButton);
-});
