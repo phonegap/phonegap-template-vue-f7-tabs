@@ -60,6 +60,7 @@ new Vue({ // eslint-disable-line no-new
   }
 });
 
+/* global f7 */
 function handleBackButton () {
   // NOTE: The back button will behave differently depending on circumstance
   // If the side panel is open, close it
