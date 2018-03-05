@@ -3,11 +3,11 @@
 let devServer;
 
 module.exports = {
-  before: (browser) => {
+  before: browser => {
     console.log('Setting up...');
     devServer = browser.globals.devServerURL;
   },
-  'main view': (browser) => {
+  'main view': browser => {
     // automatically uses dev Server port from /config.index.js
     // default: http://localhost:8080
     // see nightwatch.conf.js
@@ -16,25 +16,28 @@ module.exports = {
       .waitForElementVisible('#app', 5000)
       .assert.elementPresent('#main-view');
   },
-  'nav bar': (browser) => {
+  'nav bar': browser => {
     browser
       .url(devServer)
-      .waitForElementVisible('.navbar-inner .center', 5000)
-      .assert.containsText('.navbar-inner .center', 'Home');
+      .waitForElementVisible('.navbar-inner .title', 5000)
+      .assert.containsText('.navbar-inner .title', 'Home');
   },
-  'content block title': (browser) => {
+  'content block title': browser => {
     browser
       .url(devServer)
-      .waitForElementVisible('.page-content .content-block-title', 5000)
-      .assert.containsText('.page-content .content-block-title', 'Home Page');
+      .waitForElementVisible('.page-content .block-title', 5000)
+      .assert.containsText('.page-content .block-title', 'Hello World');
   },
-  'content block': (browser) => {
+  'content block': browser => {
     browser
       .url(devServer)
-      .waitForElementVisible('.page-content .content-block .content-block-inner', 5000)
-      .assert.containsText('.page-content .content-block .content-block-inner', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio est aliquam officiis quaerat placeat, cum explicabo magni soluta totam maxime autem minima accusamus eos suscipit dignissimos corporis modi voluptatum fugiat!');
+      .waitForElementVisible('.page-content .block', 5000)
+      .assert.containsText(
+        '.page-content .block',
+        'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio est aliquam officiis quaerat placeat, cum explicabo magni soluta totam maxime autem minima accusamus eos suscipit dignissimos corporis modi voluptatum fugiat!'
+      );
   },
-  'tab bar': (browser) => {
+  'tab bar': browser => {
     browser
       .url(devServer)
       .waitForElementVisible('.tabbar', 5000)

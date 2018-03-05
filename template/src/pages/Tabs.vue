@@ -10,7 +10,7 @@
     </f7-toolbar>
 
     <f7-tabs>
-      <f7-tab id="home" active>
+      <f7-tab id="home" tab-active>
         <home-page />
       </f7-tab>
       <f7-tab id="about">
@@ -25,24 +25,24 @@
 </template>
 
 <script>
-  import Home from './Home';
-  import About from './About';
-  import Services from './Services';
+import Home from './Home';
+import About from './About';
+import Services from './Services';
 
-  export default {
-    name: 'Tabs',
-    components: {
-      'home-page': Home,
-      'about-page': About,
-      'services-page': Services
+export default {
+  name: 'Tabs',
+  components: {
+    'home-page': Home,
+    'about-page': About,
+    'services-page': Services
+  },
+  computed: {
+    isiOS() {
+      return window.isiOS;
     },
-    computed: {
-      isiOS () {
-        return window.isiOS;
-      },
-      isMaterial () {
-        return window.isMaterial;
-      }
+    isMaterial() {
+      return window.isMaterial;
     }
-  };
+  }
+};
 </script>
