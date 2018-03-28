@@ -31,15 +31,4 @@ describe('Tabs.vue', () => {
   it('should have a name of "Tabs"', () => {
     expect(Tabs.name).to.equal('Tabs');
   });
-
-  describe('Computed', () => {
-    it('should return a computed property for the global `isiOS`', () => {
-      window.isiOS = true;
-      expect(Tabs.computed.isiOS()).to.equal(true);
-    });
-    it('should return a computed property for the global `isMaterial`', () => {
-      window.isMaterial = true;
-      expect(Tabs.computed.isMaterial()).to.equal(true);
-    });
-  });
 });

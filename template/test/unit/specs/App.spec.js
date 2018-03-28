@@ -32,10 +32,6 @@ describe('App.vue', () => {
   });
 
   describe('Computed', () => {
-    it('should return a computed property for the global `isiOS`', () => {
-      window.isiOS = true;
-      expect(App.computed.isiOS()).to.equal(window.isiOS);
-    });
     /*
     it('should return a computed property for platformClass that matches the platform', () => {
       window.isiOS = true;
