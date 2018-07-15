@@ -19,7 +19,8 @@ import AppStyles from './css/app.css';
 import Routes from './routes.js';
 
 // Import App Component
-import App from './app';
+import App from './App.vue';
+
 
 // Init F7 Vue Plugin
 Vue.use(Framework7Vue, Framework7);
